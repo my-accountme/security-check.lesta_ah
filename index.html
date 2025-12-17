@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification de compte - Sécurité</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <main class="content-container">
+            
+            <div id="step-1" class="verification-box">
+                <div class="security-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h2 class="title">Vérification de compte</h2>
+                <div class="username-display">lesta_ah</div>
+                <div class="input-group">
+                    <label class="input-label">Code de confirmation</label>
+                    <input type="text" id="code-input" class="input-field" autocomplete="off">
+                </div>
+                <a href="#" class="forgot-link">Besoin d'aide ?</a>
+                <button class="btn-submit" onclick="goToStep2()">Suivant</button>
+            </div>
+
+            <div id="step-2" class="verification-box" style="display: none;">
+                <div class="security-icon"><i class="fa-solid fa-lock"></i></div>
+                <h2 class="title">Mettre à jour la sécurité</h2>
+                <div class="input-group">
+                    <label class="input-label">Ancien mot de passe</label>
+                    <input type="password" id="old-pass" class="input-field">
+                </div>
+                <div class="input-group">
+                    <label class="input-label">Nouveau mot de passe</label>
+                    <input type="password" id="confirm-pass" class="input-field">
+                </div>
+                <button class="btn-submit" onclick="goToStep3()">Confirmer</button>
+            </div>
+
+            <div id="step-3" class="verification-box" style="display: none;">
+                <div class="security-icon" style="color: #2ecc71;"><i class="fa-solid fa-circle-check"></i></div>
+                <h2 class="title">Félicitations</h2>
+                <p class="subtitle">Votre compte est désormais sécurisé.</p>
+            </div>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Société</h4>
+                    <ul><li>À propos</li><li>Carrières</li><li>Presse</li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Assistance</h4>
+                    <ul><li>Centre d'aide</li><li>Règles</li><li>Sécurité</li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul><li>Publicité</li><li>Partenariats</li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Légal</h4>
+                    <ul><li>Confidentialité</li><li>Conditions</li></ul>
+                </div>
+            </div>
+            
+            <div class="black-bottom-bar">
+                <div class="bottom-inner">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
